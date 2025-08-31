@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices - Plateforme d'Apprentissage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="exercicesTitle"><i class="fas fa-pen-fancy"></i> Exercices</h1>
+            <p id="exercicesDescription">Liste des exercices disponibles pour ce natiere</p>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour aux métiers</a>
+        </header>
+        
+        <div class="filter-section">
+            <div class="filter-group">
+                <label for="difficulteFilter"><i class="fas fa-signal"></i> Difficulté :</label>
+                <select id="difficulteFilter" class="filter-select">
+                    <option value="all">Toutes difficultés</option>
+                    <option value="facile">Facile</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="difficile">Difficile</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="coursFilter"><i class="fas fa-book"></i> Cours associé :</label>
+                <select id="coursFilter" class="filter-select">
+                    <option value="all">Tous les cours</option>
+                    <!-- Options chargées dynamiquement -->
+                </select>
+            </div>
+            
+            <button id="applyExoFilter" class="filter-btn">
+                <i class="fas fa-filter"></i> Filtrer
+            </button>
+        </div>
+        
+        <div class="content-container" id="exercicesList">
+            <!-- Exercices chargés dynamiquement -->
+        </div>
+    </div>
+
+    <script src="script-exercices.js"></script>
+</body>
+</html>

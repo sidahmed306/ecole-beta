@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours - Plateforme d'Apprentissage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="coursTitle"><i class="fas fa-book-open"></i> Cours</h1>
+            <p id="coursDescription">Liste des cours disponibles pour ce matiere</p>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour aux métiers</a>
+        </header>
+        
+        <div class="filter-section">
+            <div class="filter-group">
+                <label for="niveauFilter"><i class="fas fa-layer-group"></i> Niveau :</label>
+                <select id="niveauFilter" class="filter-select">
+                    <option value="all">Tous les niveaux</option>
+                    <option value="débutant">Débutant</option>
+                    <option value="intermédiaire">Intermédiaire</option>
+                    <option value="avancé">Avancé</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="dureeFilter"><i class="fas fa-clock"></i> Durée :</label>
+                <select id="dureeFilter" class="filter-select">
+                    <option value="all">Toutes durées</option>
+                    <option value="30">Moins de 30 min</option>
+                    <option value="60">30-60 min</option>
+                    <option value="90">60-90 min</option>
+                    <option value="120">Plus de 90 min</option>
+                </select>
+            </div>
+            
+            <button id="applyFilter" class="filter-btn">
+                <i class="fas fa-filter"></i> Filtrer
+            </button>
+        </div>
+        
+        <div class="content-container" id="coursList">
+            <!-- Cours chargés dynamiquement -->
+        </div>
+    </div>
+
+    <script src="script-cours.js"></script>
+</body>
+</html>
